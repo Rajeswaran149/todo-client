@@ -84,6 +84,8 @@ const TaskList = ({ initialTasks }) => {
                     <tr>
                         <th className="p-3 text-center border border-gray-400">ID</th>
                         <th className="p-3 text-center border border-gray-400">Task</th>
+                        <th className="p-3 text-center border border-gray-400">Status</th>
+                        <th className="p-3 text-center border border-gray-400">Created At</th>
                         <th className="p-3 text-center border border-gray-400">Actions</th>
                     </tr>
                 </thead>
@@ -94,7 +96,7 @@ const TaskList = ({ initialTasks }) => {
                             className={`border-b ${index % 2 === 0 ? 'bg-gray-100' : 'bg-white'} hover:bg-gray-200`}
                         >
                             <td className="p-3 text-center border border-gray-400">{task.customId}</td>
-                            <td className="p-3 text-center border border-gray-400" style={{ width: '70%' }}>
+                            <td className="p-3 text-center border border-gray-400" style={{ width: '30%' }}>
                                 {editingTaskId === task._id ? (
                                     <input 
                                         value={editedTask} 
@@ -103,6 +105,16 @@ const TaskList = ({ initialTasks }) => {
                                     />
                                 ) : (
                                     task.task
+                                )}
+                            </td>
+                            <td className="p-3 text-center border border-gray-400" style={{ width: '20%' }}>
+                                { (
+                                    task.status
+                                )}
+                            </td>
+                            <td className="p-3 text-center border border-gray-400" style={{ width: '20%' }}>
+                                { (
+                                    task.created_at
                                 )}
                             </td>
                             <td className="p-3 text-center border border-gray-400" style={{ width: '30%' }}>
