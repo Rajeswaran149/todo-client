@@ -34,7 +34,24 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ![Screenshot 2024-09-24 124205](https://github.com/user-attachments/assets/fb226785-068a-4990-8eed-0bd47e5be167)
 ![Screenshot 2024-09-24 124257](https://github.com/user-attachments/assets/a9bf652f-6cac-4df8-b8a5-63eea21a5495)
 
+# Framework: Next.js
 
+Utilizes server-side rendering (SSR) for improved performance and SEO.
+Supports dynamic routing for easy navigation between pages.
+#Styling: Tailwind CSS
+
+Provides a modern, responsive design with utility-first classes.
+Ensures the application adapts to various screen sizes.
+
+# UI Components:
+
+Streamlines the creation of interactive elements like buttons and forms.
+Enhances user experience and usability.
+
+# Structure:
+
+Organized folder structure with clear separation of pages (for routing) and components (for reusable UI elements).
+Incorporates environment variables for managing sensitive information.
 
 ## Getting Started
 
